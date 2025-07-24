@@ -1,0 +1,4 @@
+requests==2.32.3
+ib-insync==0.9.86
+python-dotenv==1.0.1
+pandas==2.2.3
