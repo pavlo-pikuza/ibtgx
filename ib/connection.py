@@ -2,6 +2,9 @@ from ib_insync import IB
 import functools
 import inspect
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def with_ib_connection(_func=None):
 

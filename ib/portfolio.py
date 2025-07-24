@@ -1,4 +1,4 @@
-from connection import with_ib_connection
+from .connection import with_ib_connection
 
 @with_ib_connection
 async def get_portfolio(ib):

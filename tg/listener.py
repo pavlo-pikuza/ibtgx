@@ -37,8 +37,8 @@ def listen_for_commands():
                     continue
 
                 if text == "/accounts":
-                    reply = asyncio.run(get_accounts())
-                    send_text(chat_id, reply)
+                    accounts = asyncio.run(get_accounts())
+                    send_text(chat_id, "Accounts:\n"+"\n".join(accounts))
 
                 #if text == "/balance":
                 #    reply = asyncio.run(get_account_balance())
