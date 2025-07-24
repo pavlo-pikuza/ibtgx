@@ -8,7 +8,7 @@ async def get_accounts(ib):
     return accounts
 
 @with_ib_connection
-async def show_balance(ib, account):
+async def get_account_balance(ib, account):
     summary = await ib.accountSummaryAsync()
     df = util.df(summary)
     fields = ['NetLiquidation', 'BuyingPower', 'AvailableFunds', 'TotalCashValue']
